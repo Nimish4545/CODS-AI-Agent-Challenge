@@ -62,8 +62,8 @@ git clone https://github.com/IBM/AssetOpsBench.git
 cd AssetOpsBench
 ```
 ### B. Install Core Tools
--Install Docker Desktop(Windows/Mac) or Docker Engine + Compose (Linux).
--Install Python 3.10+ and Conda (recommended).
+- Install Docker Desktop(Windows/Mac) or Docker Engine + Compose (Linux).
+- Install Python 3.10+ and Conda (recommended).
 
 ### C. Create Environment
 Using Conda:
@@ -134,28 +134,30 @@ python -m src.run_demo --scenario scenarios/sample_scenario.jsonl
 ---
 
 💻 Development Notes
--LLMs:
-Local dev does not require LLaMA-3-70B.
-Use smaller models (LLaMA-2-7B, Mistral-7B, OpenAI/GPT APIs) or mock responses.
--Templates: Modify only TODO sections in submission templates.
--Config: Keep model keys & endpoints configurable via .env or config files.
+LLMs:
+- Local dev does not require LLaMA-3-70B.
+- Use smaller models (LLaMA-2-7B, Mistral-7B, OpenAI/GPT APIs) or mock responses.
+Templates: 
+- Modify only TODO sections in submission templates.
+Config: 
+- Keep model keys & endpoints configurable via .env or config files.
 
 ---
 
 🚀 Codabench Submission
-1.Register for the competition
-2.Prepare submission using provided templates (submission_template_track1.json, submission_template_track2.json).
-3.Zip predictions or bundle code as required.
-4.Submit via My Submissions tab on Codabench.
-5.Monitor logs & leaderboard.
+- Register for the competition
+- Prepare submission using provided templates (submission_template_track1.json, submission_template_track2.json).
+- Zip predictions or bundle code as required.
+- Submit via My Submissions tab on Codabench.
+- Monitor logs & leaderboard.
 Limits:
--Max 50 submissions per team in Phase 1.
--Strict daily cap enforced.
+- Max 50 submissions per team in Phase 1.
+- Strict daily cap enforced.
 
 ---
 
 🐞 Troubleshooting
--Docker build OOM → use assetopsbench-basic prebuilt image.
--Missing dependencies → check both basic_requirements.txt and extra_requirements.txt.
--LLM too heavy → mock/stub locally, rely on Codabench for true evaluation.
--Codabench submission errors → check logs; ensure JSON structure matches template.
+- Docker build OOM → use assetopsbench-basic prebuilt image.
+- Missing dependencies → check both basic_requirements.txt and extra_requirements.txt.
+- LLM too heavy → mock/stub locally, rely on Codabench for true evaluation.
+- Codabench submission errors → check logs; ensure JSON structure matches template.
